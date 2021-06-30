@@ -1,16 +1,18 @@
+/*/ Classe de entidade./*/
 package entities;
 
 public class Apartament {
-	
+
 	private String name;
 	private String email;
 
-	
+	/* / Construtor com nome e email. / */
 	public Apartament(String name, String email) {
 		this.name = name;
 		this.email = email;
 	}
 
+	/* /Funções gets e sets. / */
 	public String getName() {
 		return name;
 	}
@@ -27,13 +29,10 @@ public class Apartament {
 		this.email = email;
 	}
 
-	public String toString(){
-		
-		return name
-			+  ", "
-			+  email; 
+	/* / Função toString / */
+	public String toString() {
+
+		return name + ", " + email;
 	}
-	
-	
-	
+
 }
